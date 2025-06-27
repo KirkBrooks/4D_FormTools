@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="4D_formEditor" uuid="FE60EAC44A3741FBA96F9BEBABE8533E" collation_locale="en">
+<base name="4D_FormTools" uuid="FE60EAC44A3741FBA96F9BEBABE8533E" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<base_extra>
 		<journal_file journal_file_enabled="true"/>
