@@ -1,6 +1,6 @@
 # 4D FormTools
 
-A versatile 4D application designed to provide developer tools for making precise adjustments and changes to existing forms in 4D projects. This tool enables bulk modifications, pattern-based searches, and automated transformations across multiple forms.
+A versatile 4D application designed to provide developer tools for making precise adjustments and changes to existing forms in 4D projects. This tool enables bulk modifications, pattern-based searches, and automated transformations across multiple forms. FormTools provides much of the functionality of Form Macros while allowing you to write 4D code on the fly to apply to specific forms and form objects.
 
 ## Features
 
@@ -83,9 +83,12 @@ If you have more complex code you might want to just write a method (a big reaso
 
 It's just 4D code and you know how to write 4D code. The form object is just an object.
 
-## Backup first
+## Backup first!
 
-This is a fantastic tool but it really is important to be smart when you use it. If you aren't using git or some other version control I don't really recommend using it. You can change too much too fast. Otherwise - the best practice is to make a new branch of the project before you start. If you make a mistake you just revert that file - or the whole session. 
+This is a fantastic tool but it really is important to be smart when you use it. If you aren't using git or some other version control I don't really recommend using it. You can change too much too fast. Otherwise - the best practice is to make a new branch of the project before you start. If you make a mistake you just revert that file - or the whole session.
+
+##
+
 
 ## Contributing
 
