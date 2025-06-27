@@ -28,6 +28,8 @@ A versatile 4D application designed to provide developer tools for making precis
 
 ## Installation
 
+> You musts have Grep installed on your system.
+
 ### Standalone Usage
 - Open the 4D FormTools project in 4D v20 or later.
 - Run the `modify_forms` project form
