@@ -1,0 +1,102 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"windowTitle": "Alert",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 600,
+					"height": 30,
+					"fill": "#8b4513",
+					"stroke": "transparent"
+				},
+				"Title": {
+					"type": "input",
+					"left": 9,
+					"top": 0,
+					"width": 399,
+					"height": 30,
+					"dataSource": "Form:C1466.title",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"stroke": "#f5deb3",
+					"fill": "transparent",
+					"borderStyle": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Input": {
+					"type": "input",
+					"left": 11,
+					"top": 36,
+					"width": 567,
+					"height": 85,
+					"fontSize": 18,
+					"borderStyle": "none",
+					"scrollbarVertical": "automatic",
+					"showSelection": true,
+					"enterable": false,
+					"focusable": true,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.message"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Done",
+					"top": 129,
+					"left": 479,
+					"width": 99,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[Enter]",
+					"defaultButton": true,
+					"focusable": false,
+					"stroke": "white"
+				}
+			}
+		}
+	],
+	"geometryStamp": 71,
+	"memorizeGeometry": true,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

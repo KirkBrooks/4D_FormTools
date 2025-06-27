@@ -1,0 +1,436 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDrop",
+		"onDataChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 505,
+					"left": 10,
+					"width": 620,
+					"height": 286,
+					"stroke": "transparent",
+					"fill": "#78ACFF",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"borderRadius": 8
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 95,
+					"left": 10,
+					"width": 620,
+					"height": 117,
+					"stroke": "transparent",
+					"fill": "#FFEBD4",
+					"borderRadius": 8
+				},
+				"forms_LB": {
+					"type": "listbox",
+					"left": 14,
+					"top": 257,
+					"width": 616,
+					"height": 207,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.forms_LB.data",
+					"currentItemSource": "Form:C1466.forms_LB.currentItem",
+					"currentItemPositionSource": "Form:C1466.forms_LB.position",
+					"selectedItemsSource": "Form:C1466.forms_LB.selectedItems",
+					"sizingY": "fixed",
+					"hideExtraBlankRows": true,
+					"headerHeight": "2em",
+					"resizingMode": "legacy",
+					"scrollbarHorizontal": "hidden",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"dropping": "custom",
+					"columns": [
+						{
+							"header": {
+								"name": "Header3",
+								"text": ""
+							},
+							"name": "Column3",
+							"resizable": false,
+							"dataSourceTypeHint": "boolean",
+							"truncateMode": "none",
+							"dataSource": "This:C1470.ck",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"width": 27,
+							"footer": {
+								"name": "Footer3"
+							}
+						},
+						{
+							"header": {
+								"text": "Form name",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.name",
+							"width": 197
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "Table"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.table"
+						}
+					]
+				},
+				"withTableForms": {
+					"type": "checkbox",
+					"text": "Table Forms",
+					"top": 106,
+					"left": 177,
+					"width": 149,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.withTableForms"
+				},
+				"withProjectForms": {
+					"type": "checkbox",
+					"text": "Project Forms",
+					"top": 106,
+					"left": 15,
+					"width": 149,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.withProjectForms"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Search form definitions",
+					"top": 59,
+					"left": 14,
+					"width": 271,
+					"height": 31,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"stroke": "#696969"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Pattern :",
+					"top": 135,
+					"left": 24,
+					"width": 66,
+					"height": 16,
+					"class": "",
+					"stroke": "#424242",
+					"textAlign": "right"
+				},
+				"grep_pattern": {
+					"type": "input",
+					"left": 104,
+					"top": 135,
+					"width": 506,
+					"height": 33,
+					"dataSource": "Form:C1466.grep_pattern",
+					"placeholder": "  \"type\": \"button\""
+				},
+				"btn_search": {
+					"type": "button",
+					"text": "Search Forms",
+					"top": 174,
+					"left": 490,
+					"width": 120,
+					"height": 25,
+					"events": [
+						"onClick"
+					]
+				},
+				"withRegex": {
+					"type": "checkbox",
+					"text": "Regex",
+					"top": 176,
+					"left": 104,
+					"width": 89,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.withRegex"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Apply to :",
+					"top": 511,
+					"left": 24,
+					"width": 116,
+					"height": 22,
+					"stroke": "#FFFFFF",
+					"fontWeight": "bold",
+					"fontSize": 18
+				},
+				"object_names": {
+					"type": "input",
+					"left": 146,
+					"top": 538,
+					"width": 459,
+					"height": 17,
+					"dataSource": "Form:C1466.object_names",
+					"placeholder": "  semi-colon separated list:  amount; reportDate; ...",
+					"stroke": "#696969"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Object names :",
+					"top": 538,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"textAlign": "right",
+					"stroke": "#FFFFFF",
+					"fontWeight": "bold"
+				},
+				"object_types": {
+					"type": "input",
+					"left": 146,
+					"top": 566,
+					"width": 459,
+					"height": 17,
+					"dataSource": "Form:C1466.object_types",
+					"placeholder": "  semi-colon separated list:  input; button; ...",
+					"stroke": "#696969"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Object types :",
+					"top": 566,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"textAlign": "right",
+					"stroke": "#FFFFFF",
+					"fontWeight": "bold"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 146,
+					"top": 620,
+					"width": 459,
+					"height": 129,
+					"dataSource": "Form:C1466.transformCode",
+					"sizingY": "grow",
+					"fontFamily": "JetBrainsMono NF Regular",
+					"fontSize": 14,
+					"placeholder": "    4D code applied to the specified form objects"
+				},
+				"btn_apply": {
+					"type": "button",
+					"text": "Apply",
+					"top": 758,
+					"left": 490,
+					"width": 120,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"sizingY": "move",
+					"sizingX": "move"
+				},
+				"Input": {
+					"type": "input",
+					"left": 290,
+					"top": 232,
+					"width": 335,
+					"height": 17,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"stroke": "#696969",
+					"dataSource": "Form:C1466.forms_LB.get_shortDesc()"
+				},
+				"object_data_types": {
+					"type": "input",
+					"left": 146,
+					"top": 593,
+					"width": 459,
+					"height": 17,
+					"dataSource": "Form:C1466.object_data_types",
+					"placeholder": "  date; number; text; boolean, integer, time, object...",
+					"dataSourceTypeHint": "text",
+					"stroke": "#696969"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Data types :",
+					"top": 593,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"textAlign": "right",
+					"stroke": "#FFFFFF",
+					"fontWeight": "bold"
+				},
+				"btn_code": {
+					"type": "button",
+					"text": "Code :    ",
+					"top": 620,
+					"left": 24,
+					"width": 107,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"style": "roundedBevel",
+					"popupPlacement": "separated",
+					"textAlign": "right"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 132,
+					"top": 14,
+					"width": 213,
+					"height": 17,
+					"dataSource": "Form:C1466.host.name",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false
+				},
+				"btn_project": {
+					"type": "button",
+					"text": "4D Project :\t",
+					"top": 14,
+					"left": 10,
+					"width": 116,
+					"height": 37,
+					"events": [
+						"onClick"
+					],
+					"textAlign": "right",
+					"style": "roundedBevel",
+					"popupPlacement": "separated"
+				},
+				"Input3": {
+					"type": "input",
+					"left": 132,
+					"top": 34,
+					"width": 493,
+					"height": 17,
+					"dataSource": "Form:C1466.host.root.path",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false
+				},
+				"caseInsensitive": {
+					"type": "checkbox",
+					"text": "Case Insensitive",
+					"top": 176,
+					"left": 184,
+					"width": 129,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.caseInsensitive"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Forms",
+					"top": 223,
+					"left": 14,
+					"width": 111,
+					"height": 31,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"stroke": "#696969"
+				},
+				"Text7": {
+					"type": "text",
+					"text": "4D Code",
+					"top": 472,
+					"left": 14,
+					"width": 211,
+					"height": 31,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"stroke": "#696969"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "If no filters are specified code is applied to every form object",
+					"top": 514,
+					"left": 152,
+					"width": 436,
+					"height": 16,
+					"textAlign": "left",
+					"stroke": "#FFFFFF",
+					"fontWeight": "bold"
+				}
+			},
+			"entryOrder": [
+				"withProjectForms",
+				"withTableForms",
+				"grep_pattern",
+				"withRegex",
+				"btn_search",
+				"forms_LB",
+				"object_names",
+				"object_types",
+				"object_data_types",
+				"Input2",
+				"btn_apply",
+				"Input1",
+				"btn_project",
+				"Input3",
+				"caseInsensitive"
+			]
+		}
+	],
+	"geometryStamp": 748,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
