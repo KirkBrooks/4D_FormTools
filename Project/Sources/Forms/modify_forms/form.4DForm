@@ -18,7 +18,7 @@
 		"onDrop",
 		"onDataChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "4D Form Tools",
 	"destination": "detailScreen",
 	"pages": [
 		{
